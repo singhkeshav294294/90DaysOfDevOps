@@ -1,19 +1,22 @@
-process states (running, sleeping, zombie, etc.)
+**Process States in Linux**
 
-running means process is running/runnable and Process is using CPU.
+Running (R)
+The process is currently executing on the CPU or is ready to run and waiting for CPU time.
 
-sleeping means it is waiting for /disk or wait() or any other event.
+Sleeping (S / D)
+The process is waiting for an event or resource, such as disk I/O, network I/O, or the completion of another process via wait().
 
-zombie means a process that has finished execution but parent process hasn't recoved the exit status
+Zombie (Z)
+The process has completed execution, but its parent process has not yet collected its exit status. The process entry remains in the process table until it is reaped by the parent.
 
-===========================================================
+**Commonly Used Linux Commands**
 
-List 5 commands you would use daily
+ls -ltr – List files in long format, sorted by modification time
 
-ls -ltr
-ps -ef 
-top
-grep -i
-cd/mkdir/mv
+ps -ef – Display all running processes with full details
 
-======================================================
+top – Monitor real-time CPU and memory usage
+
+grep -i – Search text patterns case-insensitively
+
+cd / mkdir / mv – Basic directory navigation and file management commands
