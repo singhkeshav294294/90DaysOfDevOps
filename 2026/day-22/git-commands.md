@@ -69,6 +69,36 @@
 
 **TASK-6 Understand the Git Workflow**
 
+-->List all branches in your repo 
+git branch
+
+-->Create a new branch called feature-1
+git checkout feature-1
+
+Switch to feature-1
+git switch feature-1
+
+
+-->Create a new branch and switch to it in a single command — call it feature-2
+git checkout -b feature-2
+
+-->Try using git switch to move between branches — how is it different from git checkout?
+git swith feature-1
+switch is a new feature in git speciffilcay designed to switch between branch and checkout it similar to it but we can use chekout to create the branch if not present.
+
+
+-->Make a commit on feature-1 that does not exist on main
+git add .
+git commit -m "test-feautre1 file which not exist on master"
+
+-->Switch back to main — verify that the commit from feature-1 is not there
+
+git switch master
+
+-->Delete a branch you no longer need
+
+git switch master
+git branch -d feature-1 ( user -D if branch not merged)
 
 
 
