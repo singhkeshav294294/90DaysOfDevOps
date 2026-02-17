@@ -11,3 +11,15 @@ A, AAAA, CNAME, MX, NS **
 google.com.    142    IN    A    142.250.183.1 | A – Maps a domain name to an IPv4 address.
 
 
+A port is a logical communication endpoint on a machine.
+It allows multiple services (like web server, SSH, database) to run on the same IP address.
+
+| Port  | Service                    |
+| ----- | -------------------------- |
+| 22    | SSH (Secure Shell)         |
+| 80    | HTTP (Web traffic)         |
+| 443   | HTTPS (Secure Web traffic) |
+| 53    | DNS (Domain Name System)   |
+| 3306  | MySQL Database             |
+| 6379  | Redis                      |
+| 27017 | MongoDB                    |
